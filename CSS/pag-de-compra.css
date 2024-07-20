@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER DA PÁGINA */
+.header{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    align-content: center;
+}
+
+.perfil{
+    margin-right: 15px;
+}
+/* HEADER DA PÁGINA */
+
+/* LOGO */
+.logo-imagem{
+    padding: 10px;
+}
+
+.logo-nome{
+    color: white;
+    margin-left: 20px;
+}
+/* LOGO */
+
+/* MENU DA PÁGINA */
+.menu-barra{
+    display: flex;
+    background-color: #ffa500;
+    height: 50px;
+    align-items: center;
+
+}
+
+.menu-itens a{
+    margin: -4px;
+    padding-block: 16px;
+    padding-inline: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a{
+    position: relative;
+}
+
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(164, 8, 71);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: 0.5s ease-in-out;
+}
+
+.menu-itens a:hover::after{
+    width: 100%;
+}
+
+.menu-itens a:hover{
+    background-color: rgb(239, 114, 47);
+}
+
+/* MENU DA PÁGINA *
+
+/* CONFIRMAR COMPRA */
+.secao-confimar-compra{
+    display: flex;
+
+    margin: 20px;
+
+    width: 97%;
+    height: 500px;
+
+
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
+}
+
+h2{
+    font-size: 40px;
+}
+
+.item1{
+    
+    width: 20px;
+    height: 20px;
+}
+
+/* BANDEIRAS DE PAGAMENTO */
+.bandeiras div{
+
+    display: inline-block;
+    flex-direction: row;
+
+    padding: 20px;
+}
+
+.bandeira{
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.visa{
+    background-image: url(../images/Bandeira/Visa.png);
+}
+
+.mastercard{
+    background-image: url(../images/Bandeira/MasterCard.png);
+}
+
+.maestro{
+    background-image: url(../images/Bandeira/Maestro.png)
+}
+
+.elo{
+    background-image: url(../images/Bandeira/Elo.png)
+}
+
+.bradesco{
+    background-image: url(../images/Bandeira/Bradesco.png)
+}
+
+.americanexpress{
+    background-image: url(../images/Bandeira/AmericanExpress.png);
+}
+
+.hipercard{
+    background-image: url(../images/Bandeira/Hipercard.png);
+}
+
+.dinersclub{
+    background-image: url(../images/Bandeira/DinersClub.png);
+}
+
+.aelo{
+    background-image: url(../images/Bandeira/Alelo.png);
+}
+
+.pix{
+    background-image: url(../images/Bandeira/Pix.png);
+}
+/* BANDEIRAS DE PAGAMENTO */
+
+.imagem-confirmacao-produto{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 40px 20px 40px 80px;
+
+    height: 375px;
+    width: 375px;
+
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
+}
+
+/* IMAGENS DOS PRODUTOS */
+.imagem-confirmacao-produto.vestido{
+    background-image: url(../images/VestidoFlorido.png);
+}
+
+.imagem-confirmacao-produto.tenis{
+    background-image: url(../images/TenisAzul.png);
+
+}
+
+.imagem-confirmacao-produto.vestido-rosa{
+    background-image: url(../images/VestidoSaiaRosa.png);
+}
+
+.imagem-confirmacao-produto.vestido-longo{
+    background-image: url(../images/VestidoRosa.png);
+}
+
+.imagem-confirmacao-produto.vestido-infantil{
+    background-image: url(../images/vestido-infantil.png);
+}
+
+.imagem-confirmacao-produto.vestido-bordado{
+    background-image: url(../images/vestido-bordado.png);
+}
+
+.imagem-confirmacao-produto.calca-jeans-masculina{
+    background-image: url(../images/calça-jeans-masculina.png);
+}
+
+.imagem-confirmacao-produto.vestido-noiva{
+    background-image: url(../images/vestido-noive.png);
+}
+/* IMAGENS DOS PRODUTOS */
+
+
+.conclusao{
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    
+    width: 400px;
+    height: auto;
+    
+}
+
+.info-produto{
+    width: 30%;
+}
+
+.resumo-pedido{
+
+
+    display: inline;
+
+    position: relative;
+
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
+
+    
+}
+
+.resumo-pedido p{
+    text-align: justify;
+    text-indent: 1.5em;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.forma-pagamento{
+    height: 200px;
+    width: 300px;
+    
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
+}
+
+.forma-pagamento p{
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+.tipo-de-pagamento{
+    margin-left: 8%;
+}
+
+.botao-comprar a{
+    position: relative;
+    left: 60%;
+    top: 100px;
+
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+}
+
+.botao-comprar a:hover{
+    background-color: #ffa500;
+}
+/* CONFIRMAR COMPRA */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+
+    .imagem-confirmacao-produto{
+        background-image: url(../images/VestidoFlorido.png);
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    
+        margin-left: 12%;
+        margin-top: -50px;
+        margin-bottom: -250px;
+    
+        height: 250px;
+        width: 250px;
+    
+        box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
+    }
+
+    .secao-confimar-compra{
+
+        width: 100%;
+        margin: 0;
+        height: 1500px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .info-produto{
+        width: 320px;
+        text-align: center;
+        margin-right: 50%;
+    }
+
+    .conclusao{
+        width: 320px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil{
+        position: relative;
+        right: 20px;
+    }
+
+    .opcoes-tamanho{
+        display: flex;
+        
+        flex-direction: column;
+    
+    }
+
+    .info-produto p{
+        margin-bottom: -220px;
+    }
+    
+}
+
+@media only screen and (min-width: 801px) {
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* MEDIA QUERIES */
+
+/* RODAPÉ */
+
+footer{
+    display: flex;
+
+    justify-content: center;
+    
+    background-color: black;
+
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.info p{
+    text-align: center;
+    color: white;
+}
+
+.info h2{
+    text-align: center;
+    color: white;
+}
+/* RODAPÉ */
+

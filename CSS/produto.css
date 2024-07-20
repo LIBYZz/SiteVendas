@@ -1,0 +1,420 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LOGO */
+.logo-imagem{
+    padding: 10px;
+}
+
+.logo-nome{
+    color: white;
+    margin-left: 20px;
+}
+/* LOGO */
+
+/* HEADER DA PÁGINA */
+.header{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    align-content: center;
+}
+
+.perfil{
+    margin-right: 15px;
+}
+/* HEADER DA PÁGINA */
+
+/* MENU DA PÁGINA */
+.menu-barra{
+    display: flex;
+    background-color: #ffa500;
+    height: 50px;
+    align-items: center;
+
+}
+
+.menu-itens a{
+    margin: -4px;
+    padding-block: 16px;
+    padding-inline: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a{
+    position: relative;
+}
+
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(164, 8, 71);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: 0.5s ease-in-out;
+}
+
+.menu-itens a:hover::after{
+    width: 100%;
+}
+
+.menu-itens a:hover{
+    background-color: rgb(239, 114, 47);
+}
+
+/* MENU DA PÁGINA */
+
+/* SEÇÃO IMAGENS */
+.informacoes-do-produto{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagens-extras{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 20px;
+}
+
+.imagens-extras-item{ 
+    padding: 20px;
+
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 5%;
+
+    height: 100px;
+    width: 100px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.imagem{
+    margin: 20px 10px;
+    max-width: 20%;
+    padding: 15%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* SEÇÃO IMAGENS */
+
+/* SEÇÃO DESCRIÇÃO */
+.nome-produto{
+    font-size: 55px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.preco{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.descricao-produto{
+    text-align: justify;
+    text-indent: 2em;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cores{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100px;
+}
+
+.cor{
+    border-radius: 50%;
+    margin-right: 50px;
+    height: 50px;
+    width: 50px;
+    
+    padding: 2%;
+    border: 5px solid black;
+}
+
+.cor:active{
+    border: 5px solid green;
+}
+
+.cor.verde{
+    background-color: rgb(20, 218, 20);
+}
+
+.cor.azul{
+    background-color: rgb(18, 137, 242);
+}
+
+.cor.vermelha{
+    background-color: rgb(248, 16, 16);
+}
+
+.cor.amarela{
+    background-color: rgb(251, 255, 0);
+}
+
+.caracteristicas{
+    margin: 3%;
+}
+
+.opcoes-tamanho{
+    display: flex;
+
+    align-items: center;
+
+}
+
+.item{
+    display: inline;
+    margin-left: 20px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SEÇÃO DESCRIÇÃO */
+
+/* SEÇÃO COMPRA */
+.secao-compra{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+
+    height: 100px;
+    width: 100%;
+}
+
+.secao-compra a{
+
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px ;
+
+    width: 15%;
+    height: 70px;
+    background-color: black;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+
+    padding: 25px 15px 25px 15px;
+}
+
+.secao-compra a:hover{
+    background-color: #ffa500;
+}
+
+
+/* SEÇÃO COMPRA */
+
+/* RODAPÉ */
+
+footer{
+    display: flex;
+    
+    background-color: black;
+
+    height: 150px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.info p{
+    text-align: center;
+    color: white;
+}
+
+/* RODAPÉ */
+
+/* IMAGENS DOS OBJETOS DE VENDA */
+.imagem.vestido, .imagens-extras-item.vestido{
+    background-image: url(../images/VestidoFlorido.png);
+}
+
+.imagem.tenis, .imagens-extras-item.tenis{
+    background-image: url(../images/TenisAzul.png);
+
+}
+
+.imagem.vestido-rosa, .imagens-extras-item.vestido-rosa{
+    background-image: url(../images/VestidoSaiaRosa.png);
+}
+
+.imagem.vestido-longo, .imagens-extras-item.vestido-longo{
+    background-image: url(../images/VestidoRosa.png);
+}
+
+.imagem.vestido-infantil, .imagens-extras-item.vestido-infantil{
+    background-image: url(../images/vestido-infantil.png);
+}
+
+.imagem.vestido-bordado, .imagens-extras-item.vestido-bordado{
+    background-image: url(../images/vestido-bordado.png);
+}
+
+.imagem.calca-jeans-masculina, .imagens-extras-item.calca-jeans-masculina{
+    background-image: url(../images/calça-jeans-masculina.png);
+}
+
+.imagem.vestido-noiva, .imagens-extras-item.vestido-noiva{
+    background-image: url(../images/vestido-noive.png);
+}
+/* IMAGENS DOS OBJETOS DE VENDA */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+    .secao-compra{
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .cor{
+        height: 50px;
+        width: 50px;
+    }
+
+    .cores{
+        justify-content: space-between;
+     
+        flex-direction: column;
+        width: 100px;
+        height: 250px
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .perfil{
+        position: relative;
+        right: 20px;
+    }
+
+    .opcoes-tamanho{
+        display: flex;
+        
+        flex-direction: column;
+    
+    }
+
+
+    /* colocar a imagem dos produtos versao celular aqui */
+    .imagem.full{
+        display:none;
+    }
+
+    .imagem.cell{
+        padding: 70px;
+        margin-left: 25%;
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* colocar a imagem dos produtos versao celular aqui */
+
+    .imagens-extras-item{
+        display: none;
+    }
+
+    .descricao-produto{
+        position: relative;
+        left: -40px;
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .nome-produto{
+        margin: 0;
+        float: left;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .tamanho{
+        font-size: 14px;
+    }
+
+    .opcoes-tamanho{
+        
+        float: left;
+    }
+    
+}
+
+@media only screen and (min-width: 801px) {
+    .imagem.full{
+        display:block;
+    }
+    .imagem.cell{
+        display: none;
+    }
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+    .imagem.full{
+        display:block;
+    }
+    .imagem.cell{
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* RODAPÉ */
+
+footer{
+    display: flex;
+
+    justify-content: center;
+    
+    background-color: black;
+
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.info p{
+    text-align: center;
+    color: white;
+}
+
+.info h2{
+    text-align: center;
+    color: white;
+}
+/* RODAPÉ */

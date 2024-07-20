@@ -1,0 +1,93 @@
+body{
+    margin: 0 0 0 -1px;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER DA PÁGINA */
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-imagem{
+    margin-top: 20px;
+}
+
+
+h1{
+    color:white;
+}
+/* HEADER DA PÁGINA */
+
+/* MENU DA PÁGINA */
+.menu-barra{
+    display: flex;
+    background-color: #ffa500;
+    height: 50px;
+    align-items: center;
+
+}
+
+.menu-itens a{
+    margin: -4px;
+    padding-block: 16px;
+    padding-inline: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a{
+    position: relative;
+}
+
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(164, 8, 71);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: 0.5s ease-in-out;
+}
+
+.menu-itens a:hover::after{
+    width: 100%;
+}
+
+.menu-itens a:hover{
+    background-color: rgb(239, 114, 47);
+}
+
+/* TEXTOS */
+.titulo{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.textos{
+
+    margin: 20px;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.texto{
+    margin: 20px;
+}
+
+/* TEXTOS */
