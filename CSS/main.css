@@ -50,9 +50,14 @@ body{
 
 /* BANNER DA PÁGINA */
 
-/* BANNER PROMOCIONAL */
-
-/* BANNER PROMOCIONAL */
+/* PROMOÇÕES */
+.categorias{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
+/* PROMOÇÕES */
 
 /* MENU DA PÁGINA */
 .menu-barra{
