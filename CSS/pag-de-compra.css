@@ -209,7 +209,7 @@ h2{
 }
 /* IMAGENS DOS PRODUTOS */
 
-
+/* CONFIRMAR COMPRA */
 .conclusao{
     background-color: white;
 
@@ -225,14 +225,15 @@ h2{
 
 .info-produto{
     width: 30%;
+    margin: 20px;
 }
 
 .resumo-pedido{
 
-
-    display: inline;
-
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
 
     height: 200px;
     width: 300px;
@@ -240,7 +241,6 @@ h2{
 
     box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
 
-    
 }
 
 .resumo-pedido p{
@@ -267,17 +267,21 @@ h2{
     margin-left: 8%;
 }
 
+.botao-comprar{
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+
 .botao-comprar a{
-    position: relative;
-    left: 60%;
-    top: 100px;
 
     text-decoration: none;
     color: white;
     padding: 10px;
-    height: 20px;
-    width: 20px;
     background-color: black;
+
+    margin: 10px;
 }
 
 .botao-comprar a:hover{
@@ -319,7 +323,7 @@ h2{
     .info-produto{
         width: 320px;
         text-align: center;
-        margin-right: 50%;
+        margin: 0;
     }
 
     .conclusao{
