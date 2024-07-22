@@ -161,6 +161,8 @@ h2{
 }
 /* BANDEIRAS DE PAGAMENTO */
 
+
+/* CSS DA IMAGEM DO PRODUTO */
 .imagem-confirmacao-produto{
     background-size: cover;
     background-position: center;
@@ -173,8 +175,9 @@ h2{
 
     box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.19); 
 }
+/* CSS DA IMAGEM DO PRODUTO */
 
-/* IMAGENS DOS PRODUTOS */
+/* APLICAR AS IMAGENS NOS PRODUTOS */
 .imagem-confirmacao-produto.vestido{
     background-image: url(../images/VestidoFlorido.png);
 }
@@ -207,7 +210,7 @@ h2{
 .imagem-confirmacao-produto.vestido-noiva{
     background-image: url(../images/vestido-noive.png);
 }
-/* IMAGENS DOS PRODUTOS */
+/* APLICAR AS IMAGENS NOS PRODUTOS */
 
 /* CONFIRMAR COMPRA */
 .conclusao{

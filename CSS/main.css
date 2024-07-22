@@ -1,3 +1,4 @@
+/* CARACTERÍSTICAS GERAIS DO SITE */
 body{
     margin: 0 0 0 -1px;
     padding: 0;
@@ -7,6 +8,7 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* CARACTERÍSTICAS GERAIS DO SITE */
 
 /* HEADER DA PÁGINA */
 .header{
@@ -52,7 +54,7 @@ body{
 
 /* BANNER DA PÁGINA */
 
-/* PROMOÇÕES */
+/* MODELOS */
 .categorias{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -82,10 +84,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 } 
+/* OBS: mesmo com media queries, mudar a resolução deixa as imagens distorcidas, não achei uma maneira simples de evitar esse efeito */
 
-
-
-/* PROMOÇÕES */
+/* MODELOS */
 
 /* MENU DA PÁGINA */
 .menu-barra{
@@ -111,7 +112,7 @@ nav a{
     position: relative;
 }
 
-
+/* animação simples */
 nav a::after{
     content: " ";
     width: 0%;
@@ -128,6 +129,7 @@ nav a::after{
 .menu-itens a:hover::after{
     width: 100%;
 }
+/* animação simples */
 
 .menu-itens a:hover{
     background-color: rgb(239, 114, 47);
@@ -222,7 +224,7 @@ nav a::after{
     flex-flow: row wrap;
 }
 
-/* com as minhas habilidades atuais, nao consegui pensar em uma melhor maneira de colocar a imagem do produto, criei classes diferentes para cada produto, impratico, mas resolve o problema por hora */
+/*OBS: com as minhas habilidades atuais, nao consegui pensar em uma melhor maneira de colocar a imagem do produto, colocar a imagem diretamente no html estava dando alguns problemas esquisitos, por isso, criei classes diferentes para cada produto, impratico, mas resolve o problema por hora */
 
 .compra-item{
     background-repeat: no-repeat;
@@ -278,7 +280,7 @@ nav a::after{
 }
 /* IMAGENS DOS PRODUTOS */
 
-/* botão ver mais */
+/* BOTÃO VER MAIS */
 .ver-mais{
     
     display: flex;
@@ -308,17 +310,17 @@ nav a::after{
     color: white;
 }
 
-/* botão ver mais */
+/* BOTÃO VER MAIS */
 
-/* preço do produto */
+/* PREÇO DO PRODUTO */
 .preco{
     float: right;
     font-size: 20px;
     font-weight: bold;
 }
-/* preço do produto */
+/* PREÇO DO PRODUTO */
 
-/* descrição do item-compra */
+/* DESCRIÇÃO DO ITEM-COMPRA */
 .descricao-body{
 
     height: auto;
@@ -353,9 +355,9 @@ nav a::after{
     text-overflow: ellipsis;
 }
 
-/* descrição do item-compra */
+/* DESCRIÇÃO DO ITEM-COMPRA */
 
-/* prox pag */
+/* PROX PAG */
 .proxima-pagina{
     display: flex;
     flex-direction: row;
@@ -377,7 +379,7 @@ nav a::after{
     justify-content: center;
     align-content: center;
 }
-/* prox pag */
+/* PROX PAG */
 
 /* ÁREA DOS PRODUTOS */
 
@@ -617,6 +619,7 @@ footer{
 }
 /* RODAPÉ */
 
+/* SEÇÃO ENTREGA (ENDEREÇO E INFORMAÇÕES PESSOAIS) */
 .secao-informacoes{
 
     height: 600px;
@@ -661,6 +664,7 @@ footer{
 .finalizar-compra-botao a:hover{
     background-color: #ffa500;
 }
+/* SEÇÃO ENTREGA (ENDEREÇO E INFORMAÇÕES PESSOAIS) */
 
 
 
